@@ -1,0 +1,29 @@
+<graph id="Graph">
+  <version>1.0</version>
+  <node id="Read">
+    <operator>Read</operator>
+    <sources/>
+    <parameters class="com.bc.ceres.binding.dom.XppDomElement">
+      <file>C:\Users\Admit\OneDrive\Projects\Source_Code_Repository\east_insar_backend\easy_insar_backend\coreg_images\2022-03-14,2022-04-07.dim</file>
+    </parameters>
+  </node>
+  <node id="Write">
+    <operator>Write</operator>
+    <sources>
+      <sourceProduct refid="Read"/>
+    </sources>
+    <parameters class="com.bc.ceres.binding.dom.XppDomElement">
+      <file>C:\Users\Admit\OneDrive\Projects\Source_Code_Repository\east_insar_backend\easy_insar_backend\tiffs\a1736414-148d-4d4c-9510-a06e01d51739.tif</file>
+      <formatName>GeoTIFF-BigTIFF</formatName>
+    </parameters>
+  </node>
+  <applicationData id="Presentation">
+    <Description/>
+    <node id="Read">
+            <displayPosition x="36.0" y="133.0"/>
+    </node>
+    <node id="Write">
+            <displayPosition x="455.0" y="135.0"/>
+    </node>
+  </applicationData>
+</graph>
